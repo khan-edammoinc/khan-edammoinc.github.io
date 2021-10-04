@@ -1,0 +1,386 @@
+/*Without Transparent Header Css*/
+.no-transparent {
+  position: relative;
+  background: white;
+  height: auto;
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
+  top: 0;
+}
+.no-transparent nav {
+  margin-top: 0;
+}
+.no-transparent #toggle {
+  right: 4%;
+}
+.no-transparent #toggle span {
+  background: #1f87f1;
+}
+header.no-transparent nav ul li a {
+  color: #333333;
+}
+header.no-transparent nav ul li a.accot-btn {
+  background: #1f4ace;
+  color: #fff;
+  border-color: #1f4ace;
+  padding: 2rem 4rem;
+  font-weight: 500;
+}
+header.no-transparent nav ul li a.user-account img {
+  filter: brightness(0.3);
+}
+header.no-transparent .logo-box img {
+  width: 14rem;
+}
+header.no-transparent nav ul li a.accot-btn:hover {
+  background: #103fce;
+}
+
+/*Inner Banner Css*/
+.innrbanner-section {
+  height: 69rem;
+}
+.innrbanner-section .container {
+  height: 100%;
+}
+.innrbanner-section .innrbanner-cntnt {
+  height: 100%;
+  align-items: center;
+  max-width: 590px;
+}
+.innrbanner-section .innrbanner-cntnt .headingBox {
+	padding-left: 7.2rem;
+	position: relative;
+}
+.innrbanner-section .innrbanner-cntnt .headingBox h5:after {
+  background-color: #333333;
+  left: -7rem;
+  width: 4.5rem;
+}
+.innrbanner-section .innrbanner-cntnt .headingBox h5 {
+	color: #333333;
+	padding-left: 0px;
+}
+
+/*global css*/
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.bg-gray {
+  background-color: #f8faff;
+}
+.pd-150 {
+  padding: 15rem 0;
+}
+h5 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #333333;
+}
+h6 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.btn {
+  font-size: 1.8rem;
+  font-weight: 400;
+  background: #1f4ace;
+  padding: 2.4rem 5rem;
+  display: inline-block;
+  border-radius: 5rem;
+  color: #fff;
+  margin-top: 3rem;
+  border: 0.1rem solid #1f4ace;
+}
+.btn:hover {
+  background: #fff;
+  color: #1f4ace;
+  border-color: #1f4ace;
+}
+.whitebtn {
+  background: #fff;
+  color: #1f4ace;
+  border-color: #dadfed;
+}
+.whitebtn:hover {
+  background: #1f4ace !important;
+  color: #fff !important;
+  border-color: #1f4ace;
+}
+
+/*About Page Css*/
+.ourmissionsec .missionimg {
+  text-align: center;
+}
+.ourmissionsec .flex-box, .werhringsec .flex-box {
+  padding: 0px 9rem;
+}
+.ourmissionsec .missioncntnt p {
+  position: relative;
+  padding: 6.5rem 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.ourmissionsec .missioncntnt p:before, .ourmissionsec .missioncntnt p:after {
+  content: "";
+  position: absolute;
+  width: 5.6rem;
+  height: 3.6rem;
+  left: 0;
+}
+.ourmissionsec .missioncntnt p:before {
+  top: 0;
+  background-image: url('../img/about/quoteicon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ourmissionsec .missioncntnt p:after {
+  bottom: 0;
+  background-image: url('../img/about/quoteicon.png');
+  transform: rotate(-180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ourstorysec  .storycntnt {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.leadershipsec {
+  border-bottom: 1px solid #ebeef8;
+}
+.leadershipsec .text-box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.advisoryboardsec .container {
+  padding: 0px 9rem;
+}
+.advisoryboardsec  ul.flex-box >li {
+  padding: 2rem 2rem 0;
+  width: calc(100%/4);
+}
+.advisoryboardsec ul.flex-box {
+  margin: 6rem -2rem 0;
+}
+.advisoryboardsec ul.flex-box > li .imgbox img {
+  width: 100%;
+}
+.advisoryboardsec ul.flex-box > li .innr .cntntbox {
+  position: relative;
+}
+.advisoryboardsec ul.flex-box > li .innr .cntntbox:before {
+  content: '';
+  width: 4.3rem;
+  height: 1px;
+  background: #1f4ace;
+  display: block;
+  margin: 4rem 0;
+}
+.advisoryboardsec ul.flex-box > li .innr .cntntbox h6 {
+  color: #333333;
+  margin-bottom: 2.6rem;
+  line-height: 1.2;
+}
+.advisoryboardsec ul.flex-box > li .innr .cntntbox .linkedinurl {
+  border: 0.1rem solid #e0e5f4;
+  background: #f8faff;
+  width: 5.8rem;
+  height: 5.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}   
+.leadershipsec .flex-box > li {
+  padding: 5em 10rem;
+  width: 50%;
+}
+.leadershipsec .flex-box {
+  margin-top: 10rem;
+}
+.leadershipsec .flex-box > li .innr .imgbox img {
+  width: 100%;
+}
+.leadershipsec .flex-box > li .innr .imgbox {
+  margin-bottom: 5rem;
+}
+.designationtext {
+  font-size: 1.8rem;
+  color: #0e0e0e;
+  margin-top: 6px;
+  font-weight: 400;
+}
+.leadershipsec ul.flex-box > li .innr .cntntbox .linkedinurl {
+  border: 0.1rem solid #e0e5f4;
+  background: #f8faff;
+  width: 5.8rem;
+  height: 5.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+} 
+.leadershipsec ul.flex-box > li ul > li {
+  font-size: 1.8rem;
+  color: #333333;
+  position: relative;  
+  font-weight: 300;
+  padding-left: 2.7rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.leadershipsec ul.flex-box > li ul > li:before {
+  content: '';
+  width: 1.2rem;
+  height: 1px;
+  background: #1f4ace;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.leadershipsec ul.flex-box > li ul {
+  margin: 3rem 0;
+}
+.werhringsec .werhringppoint {
+  margin: 7rem -2rem 0 -6rem;
+  padding: 0;
+}
+.werhringsec .werhringppoint li {
+  width: calc(100% /3);
+  text-align: center;
+  padding: 2rem;
+}
+.werhringsec .werhringppoint li .iconbox {
+  margin-bottom: 4rem;
+}
+.werhringsec .werhringppoint li  .cntntbox p {
+  font-weight: 600;
+}
+.werhringsec .werhringsecntnt {
+  padding-right: 10rem;
+}
+.latestnewscol {
+  padding: 5rem 4rem;
+  background: #fff;
+  box-shadow: 0px 3px 0px 0px rgba(0, 44, 178, 0.004),0px 20px 50px 0px rgba(0, 9, 35, 0.1);
+  border-bottom: 4px solid #1f4ace;
+}
+.latestnewscolinnr .latestnewsbox {
+  border-bottom: 1px solid #d6d6d6;
+}
+.latestnewscolinnr .latestnewsbox .latestnewsinnr {
+  padding: 3rem 0;
+}
+.latestnewscolinnr .latestnewsbox .latestnewsinnr .blogdate {
+  font-size: 1.4rem;
+  color: #1f4ace;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.latestnewscolinnr .latestnewsbox .latestnewsinnr h6 {
+  font-size: 2rem;
+  color: #333333;
+  line-height: 1.3;
+}
+.latestnewscolinnr .whitebtn {
+  padding: 2rem 4.2rem;
+}
+.latestnewscol .latestblogbox .latestnewsbox:last-child {
+  border-bottom: none;
+}
+
+/*Media Query*/
+@media all and (max-width: 1600px) {
+
+}
+@media all and (max-width: 1370px) {
+  .container {
+    padding: 0px 20px;
+    width: 92%;
+  }
+  .no-transparent {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+/*1280*/
+@media all and (max-width: 1280px) {
+  .advisoryboardsec ul.flex-box > li .imgbox img {
+    width: 100%;
+  }
+}
+/*1025*/
+@media all and (max-width: 1025px) {
+  .ourmissionsec .missionimg {
+    padding-right: 4rem;
+  }
+  .pd-150 {
+    padding: 10rem 0;
+  }
+  .leadershipsec .flex-box > li {
+    padding: 5em 5rem;
+    width: 50%;
+  }
+  .ourmissionsec .flex-box, .werhringsec .flex-box {
+    padding: 0px 0rem;
+  }
+  .advisoryboardsec .container {
+    padding: 0px 2rem;
+  }
+  .advisoryboardsec ul.flex-box {
+    margin: 6rem 0rem 0;
+  }
+}
+/*768*/
+@media all and (max-width: 768px) {
+  .col-6, .col-4, .col-7, .col-3 {
+    width: 100%;
+  }
+  .leadershipsec .flex-box > li {
+    padding: 5em 2.5rem;
+    width: 50%;
+  }
+  .ourmissionsec .missionimg {
+    padding-right: 0rem;
+    margin-top: 3rem;
+  }
+  .ourmissionsec .flex-box {
+    flex-direction: column-reverse;
+  }
+  .advisoryboardsec ul.flex-box > li {
+    padding: 2rem 2rem 3rem;
+    width: calc(100%/2);
+  }
+  .werhringsec .werhringsecntnt {
+    padding-right: 0rem;
+  }
+  .no-transparent {
+    height: 90px;
+  }
+}
+/*500px*/
+@media all and (max-width: 500px) {
+  .latestnewscol {
+    margin-top: 8rem;
+  }
+  .advisoryboardsec ul.flex-box > li {
+    padding: 2rem 0rem 3rem;
+    width: calc(100%);
+  }
+  .leadershipsec .flex-box > li {
+    padding: 5em 0rem;
+    width: 100%;
+  }
+  .leadershipsec .flex-box {
+    margin-top: 4rem;
+  }  
+  .container {
+    padding: 0px 15px;
+  }
+  .ourmissionsec .missioncntnt p {
+    font-size: 2.3rem;
+  }
+}
