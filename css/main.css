@@ -415,7 +415,9 @@ ul.data-value-list li {
     position: relative;
     transition: all linear .3s;
 }
-
+ul.data-value-list li:first-child h3{
+    justify-content: space-between;
+}
 ul.data-value-list li:hover {
     background-color: #fff;
 }

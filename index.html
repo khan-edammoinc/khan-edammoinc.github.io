@@ -364,7 +364,7 @@
             </div>
             <ul class="data-value-list flex-box">
                 <li>
-                    <h3>$ <span>3.1</span> T</h3>
+                    <h3 class="flex-box">$ <span class="counter">3.1</span> T</h3>
                     <p>estimated locked
                         potential of your data</p>
                 </li>
@@ -909,10 +909,29 @@ if ($(window).width() < 930) {
             ]
         });
     }
-    $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+    // $('.counter').counterUp({
+    //     delay: 10,
+    //     time: 1000
+    // });
+        // setTimeout( function(){ 
+        //     $('.counter').counterUp({
+        //     delay: 10,            
+        //     time: 1000
+        // });
+        // }  , 1000 );
+
+        function myFunction() {
+                setTimeout(function () {
+                    myFunction();
+                    $('.counter').counterUp({
+                        delay: 10,
+                        time: 1000
+                    });
+                }, 5000);
+
+            }
+
+        myFunction();
 </script>
 </body>
 
