@@ -20,11 +20,10 @@ header.no-transparent nav ul li a {
   color: #333333;
 }
 header.no-transparent nav ul li a.accot-btn {
-  background: #1f4ace;
-  color: #fff;
-  border-color: #1f4ace;
-  padding: 2rem 4rem;
-  font-weight: 500;
+  color: #333333;
+}
+header.no-transparent nav ul li img{
+  filter: invert(.7);
 }
 header.no-transparent nav ul li a.user-account img {
   filter: brightness(0.3);
@@ -33,7 +32,8 @@ header.no-transparent .logo-box img {
   width: 14rem;
 }
 header.no-transparent nav ul li a.accot-btn:hover {
-  background: #103fce;
+ color: var(--web-blue);
+ border-color: var(--web-blue);
 }
 
 /*Inner Banner Css*/
@@ -115,13 +115,13 @@ h6 {
 .ourmissionsec .missionimg {
   text-align: center;
 }
-.ourmissionsec .flex-box, .werhringsec .flex-box {
+.ourmissionsec .flex-box {
   padding: 0px 9rem;
 }
 .ourmissionsec .missioncntnt p {
   position: relative;
   padding: 6.5rem 0;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 .ourmissionsec .missioncntnt p:before, .ourmissionsec .missioncntnt p:after {
@@ -149,7 +149,8 @@ h6 {
   margin: 0 auto;
 }
 .leadershipsec {
-  border-bottom: 1px solid #ebeef8;
+  /* border-bottom: 1px solid #ebeef8; */
+  padding-bottom: 0 !important;
 }
 .leadershipsec .text-box {
   max-width: 900px;
@@ -183,6 +184,7 @@ h6 {
   color: #333333;
   margin-bottom: 2.6rem;
   line-height: 1.2;
+  min-height: 6rem;
 }
 .advisoryboardsec ul.flex-box > li .innr .cntntbox .linkedinurl {
   border: 0.1rem solid #e0e5f4;
@@ -197,6 +199,7 @@ h6 {
 .leadershipsec .flex-box > li {
   padding: 5em 10rem;
   width: 50%;
+  padding-top: 0 !important;
 }
 .leadershipsec .flex-box {
   margin-top: 10rem;
@@ -264,12 +267,19 @@ h6 {
 }
 .latestnewscol {
   padding: 5rem 4rem;
+width: 31%;
+  border-bottom: 4px solid #1f4ace;
   background: #fff;
   box-shadow: 0px 3px 0px 0px rgba(0, 44, 178, 0.004),0px 20px 50px 0px rgba(0, 9, 35, 0.1);
-  border-bottom: 4px solid #1f4ace;
+  position: relative;
+  padding-bottom: 10rem;
+}
+.latestnewscol h3{
+  font-size: 30px;
 }
 .latestnewscolinnr .latestnewsbox {
   border-bottom: 1px solid #d6d6d6;
+
 }
 .latestnewscolinnr .latestnewsbox .latestnewsinnr {
   padding: 3rem 0;
@@ -287,14 +297,56 @@ h6 {
 }
 .latestnewscolinnr .whitebtn {
   padding: 2rem 4.2rem;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  margin-right: 0;
 }
 .latestnewscol .latestblogbox .latestnewsbox:last-child {
   border-bottom: none;
 }
+.werhringsec .col-10.flex-box{
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+header.fixed.no-transparent{
+  padding: 15px 100px;
+}
+
+header.fixed.no-transparent nav ul li a{
+  color: #fff;
+}
+header.fixed.no-transparent nav ul li img{
+  filter: invert(0);
+}
+header.fixed.no-transparent .logo-box .color-logo{
+  display: none;
+  }
+header.fixed.no-transparent .logo-box .white-logo{
+display: block;
+}
+header.fixed nav ul li a.accot-btn{
+  color: var(--web-blue);
+}
+header.fixed nav ul li a.accot-btn:hover{
+  color: var(--web-yellow);
+  border-color: var(--web-yellow);
+}
+.leadershipsec .flex-box > li .innr .cntntbox .flex-box{
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.white-logo{display: none;}
+
+
+
+
+
+
 
 /*Media Query*/
 @media all and (max-width: 1600px) {
-
+  .pd-150{padding: 10rem 0;}
 }
 @media all and (max-width: 1370px) {
   .container {
@@ -305,6 +357,7 @@ h6 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+  .latestnewscol h3{font-size: 25px;}
 }
 /*1280*/
 @media all and (max-width: 1280px) {
@@ -314,6 +367,7 @@ h6 {
 }
 /*1025*/
 @media all and (max-width: 1025px) {
+  .no-transparent #toggle span{background-color: var(--web-yellow);}
   .ourmissionsec .missionimg {
     padding-right: 4rem;
   }
@@ -333,6 +387,8 @@ h6 {
   .advisoryboardsec ul.flex-box {
     margin: 6rem 0rem 0;
   }
+  .latestnewscol{width: 100%;margin-bottom: 2rem;}
+  header.fixed{left: auto;transform: none;}
 }
 /*768*/
 @media all and (max-width: 768px) {
@@ -360,12 +416,15 @@ h6 {
   .no-transparent {
     height: 90px;
   }
+  .latestnewscolinnr .whitebtn{position: static;margin-top: 2rem;}
+  header.fixed.no-transparent{padding: 0 20px;}
+  .pd-150{padding: 7rem 0;}
 }
 /*500px*/
 @media all and (max-width: 500px) {
-  .latestnewscol {
-    margin-top: 8rem;
-  }
+  .latestnewscol h3{font-size: 20px;}
+  .latestnewscol{padding: 2.5rem 2rem;}
+
   .advisoryboardsec ul.flex-box > li {
     padding: 2rem 0rem 3rem;
     width: calc(100%);
@@ -383,4 +442,9 @@ h6 {
   .ourmissionsec .missioncntnt p {
     font-size: 2.3rem;
   }
+  .innrbanner-section .innrbanner-cntnt .headingBox{padding-left: 4.2rem !important;}
+  .no-transparent{height: 75px;padding: 0 10px;}
+  header.fixed.no-transparent{padding: 0 10px;}
+  .innrbanner-section .innrbanner-cntnt .headingBox h5::after {left: -5rem;width: 3.5rem;}
+  .research-section .paper-section .text-box{justify-content: center;}
 }

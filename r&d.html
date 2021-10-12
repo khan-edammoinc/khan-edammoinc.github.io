@@ -20,7 +20,8 @@
             <span class="bottom"></span>
         </div>
         <div class="logo-box">
-            <a href="index.html/"><img src="img/dark-logo.png" alt="logo"></a>
+            <a href="index.html/" class="color-logo"><img src="img/dark-logo.png" alt="logo"></a>
+            <a href="index.html/" class="white-logo"><img src="img/logo.png" alt="logo"></a>
         </div>
         <div class="overlay" id="overlay">
             <nav class="overlay-menu">
@@ -32,7 +33,7 @@
                     <li><a href="">Case Studies</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href=""><img src="img/user.png" alt=""></a></li>
-                    <li><a href="" class="accot-btn">Create Account</a></li>
+                    <li><a href="" class="accot-btn">Schedule a Demo</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,7 +52,7 @@
     </div>
     <div class="research-section com-padding">
         <div class="container wrapper">
-            <div class="text-box">
+            <!-- <div class="text-box">
                 <h2>At Edammo Research is Our<br>
                     Core Expertise</h2>
                 <p>Our long-term research goals have grown and developed since Edammo began in 2018. Creating new and innovative technology is at the core of Edammo's goal of transforming data into powerful marketplace solutions. This paper presents a novel methodology for time series prediction.</p>
@@ -72,16 +73,16 @@
                     <h6>Experts Panelists
                         & Researchers</h6>
                 </li>
-            </ul>
+            </ul> -->
              <div class="paper-section">
                 <div class="text-box flex-box just-space align-box ">
-                    <h2>View Our Research Papers</h2>
-                    <select>
+                    <h2>View Our Papers</h2>
+                    <!-- <select>
                         <option value="" disabled selected>Select year</option>
                         <option value="">2019</option>
                         <option value="">2020</option>
                         <option value="">2021</option>
-                    </select>
+                    </select> -->
                 </div>
                 <div class="authors-detail-box">
                     <ul class="topic flex-box align-box">
@@ -131,6 +132,9 @@
                     </ul>
                     <h3>Feature Bagging and Extreme Learning Machines: Machine Learning with Severe Memory Constraints</h3>
                     <p>With the onset of easy access to supercomputers with high amounts of memory available, machine learning algorithms have continued to increase the resources necessary to perform their data analysis. This paper aims to show development in the other direction, by showing that through the use of a combination of feature bagging and ensembles of Extreme Learning Machines (ELMs) it is possible to leverage machine learning, without loss of accuracy, on devices where Flash memory is very scarce, and Random-access memory (RAM) is even scarcer, such as on embedded systems. This novel strategy is called Feature Bagged Extreme Learning Machines (FB-ELMs).</p>
+                    <div class="video-box">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/knxJybDcX38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                     <div class="authors-box">
                         <h3>Authors</h3>
                         <ul class="authors-list flex-box just-space align-box">
@@ -148,7 +152,7 @@
              </div>
         </div>
     </div>
-    <div class="get-started-box">
+    <!-- <div class="get-started-box">
         <div class="container wrapper">
             <div class="flex-box just-space align-box">
                 <div class="text">
@@ -158,7 +162,7 @@
                 <a href="" class="btn">Contact Us</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <footer id="form-page">
         <div class="container">
@@ -171,11 +175,11 @@
                     <ul>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Case Studies</a></li>
-                        <li><a href="">Career</a></li>
+                        <li><a href="">Careers</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="nav-box col-2">
+                <!-- <div class="nav-box col-2">
                     <h5>Industries</h5>
                     <ul>
                         <li><a href="">Healthcare</a></li>
@@ -184,7 +188,7 @@
                         <li><a href="">Pharmaceuticals</a></li>
                         <li><a href="">Manufacturing Process Control</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="nav-box col-25">
                     <h5>Services</h5>
                     <ul>
@@ -197,16 +201,14 @@
                 <div class="nav-box col-1">
                     <h5>Keep in Touch</h5>
                     <ul class="social-list flex-box ">
-                        <li><a href=""><img src="img/fb-icon.png" alt=""></a></li>
-                        <li><a href=""><img src="img/in-icon.png" alt=""></a></li>
-                        <li><a href=""><img src="img/tt-icon.png" alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/company/edammoinc/" target="_blank"><img src="img/in-icon.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
             <div class="bottom-bar">
                 <div class="flex-box align-box just-space">
                     <div class="lt flex-box">
-                        <p>© Copyright 2021 Edammoinc. All Rights Reserved. </p>
+                        <p>© Copyright 2021 Edammo inc. All Rights Reserved.</p>
                         <ul class="flex-box align-box">
                             <li><a href="">Privacy Policy</a></li>
                             <li><a href="">Terms of Services</a></li>
@@ -219,7 +221,30 @@
             </div>
         </div>
     </footer>
+    <script src="js/min.js"></script>
     <script>
+$(function () {
+                window.onscroll = function () { myFunction() };
+
+                var header = document.getElementById("header");
+                var sticky = $("header").offset().top;
+
+                function myFunction() {
+                    if (window.pageYOffset > sticky) {
+                        $("header").addClass('fixed');
+                    }
+                    else {
+                        $("header").removeClass('fixed');
+                    }
+                }
+
+            });
+            if ($(window).width() < 1200) {
+         $('#toggle').click(function () { 
+             $(this).toggleClass('active'); 
+             $('#overlay').toggleClass('open');
+             }); 
+            }
 
     </script>
 </body>
