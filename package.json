@@ -2,7 +2,7 @@
   "name": "edammoproto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://khan-edammoinc.github.io",
+  "homepage": "http://khan-edammoinc.github.io/website",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
